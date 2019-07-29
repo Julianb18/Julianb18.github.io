@@ -20,8 +20,21 @@ a {
 /* 
 color & style
 */              
-        
-            div,
+/*        
+#about {
+    background-color: darkgreen
+}
+#education {
+    background-color: red
+}
+#skills {
+    background-color: yellow
+}
+#contact {
+    background-color: grey
+}
+ */
+           
             header,
             footer {
                 
@@ -33,6 +46,9 @@ color & style
                 
                 background-color: rgb(60,140,150);
             }
+aside {
+    background-color: rgba(200,210,220,0.5)
+}
  
 /* 
 Navigation
@@ -61,7 +77,8 @@ nav#main-navigation ul li {
 nav#main-navigation ul li a {
     color: #fff;
     background-color: rgb(220,50,0)
-         padding: 3px 5px;
+    padding: 3px 5px;
+    
 }
 nav#main-navigation ul li a:hover {
     background-color: rgb(255,128,0)
@@ -99,6 +116,11 @@ section {
     padding-top: 20vh;
     height: 80vh;
 }
+article,
+aside {
+    height: 50vh;
+    
+}
 /**
 layout header
 **/
@@ -119,3 +141,35 @@ Layout footer
 footer {
     height: 15vh;
 }
+
+/*
+Responsive
+*/
+
+
+@media only screen and (min-width: 600px) {
+    
+                header {
+                
+                background-color: rgb(20,10,40);
+               
+            }
+
+    .content-wrapper {
+        display: flex;
+    }
+    
+    .article-wrapper {
+        width: 70%;
+    }
+    
+    .aside {
+        width: 30%;
+    }
+    
+    
+}
+
+
+
+
