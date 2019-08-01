@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+section {
+    height: 100vh
+}
+
+/* class first */
+.first {
+    background-image: url(../img/Peak.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/* second */
+.second {
+
+    background-color: rgb(226, 253, 244);
+    padding: 3vw 0 0 0;
+    display: flex;
+    align-items: center;
+}
+
+/* .wave {
+    width: 60vw;
+    margin-left: 30vw;
+  } */
+
+.bubble {
+    position: relative;
+    left: 0%;
+    bottom: 38%;
+    width: 50vw;
+    height: 15vw;
+    background-image: url(../img/bubble1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right;
+}
+
+
+.bubble img {
+    width: 100%;
+}
+
+.wave {
+    position: relative;
+    left: 3%;
+    top: 23%;
+}
+
+.wave img {
+    width: 80%;
+}
+
+.greeting {
+    position: relative;
+    font-size: 3vw;
+    font-style: oblique;
+    left: 13vw;
+    top: 6vw;
+}
+
+
+.thanks {
+    font-style: oblique;
+    font-size: 4vw;
+}
+
+/* third */
+.chalk {
+    background-image: url(../img/chalk-board1.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 100%;
+    margin: auto;
+    height: 800px;
+
+}
+
+.dci {
+    font-style: oblique;
+    position: relative;
+    top: 68vh;
+    left: 33vw;
+    width: 15%;
+    font-size: 9vw
+}
+
+p1 {
+    position: relative;
+    top: 600px;
+}
+
+p2 {
+    color: white
+}
+
+
+/* Footer */
+footer {
+    background-color: black;
+    width: 98vw;
+    height: 10vw;
+}
