@@ -25,6 +25,7 @@ section {
     padding: 3vw 0 0 0;
     display: flex;
     align-items: center;
+    
 }
 
 /* .wave {
@@ -106,6 +107,6 @@ p2 {
 /* Footer */
 footer {
     background-color: black;
-    width: 98vw;
+    
     height: 10vw;
 }
