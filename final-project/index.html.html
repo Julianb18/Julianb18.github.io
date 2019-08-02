@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Final project for DCI orientation course">
+
+    <title>Final Project Planning</title>
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="img/j-b1.jpg">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&display=swap" rel="stylesheet">
+    
+    <script>
+        var minHeight = 40;
+        var maxHeight = 195;
+
+        function togglePhoneNav() {
+            var x = document.getElementById("mobile-nav");
+            if (x.style.height === maxHeight + "px") {
+                x.style.height = minHeight + "px";
+            } else {
+                x.style.height = maxHeight + "px";
+            }
+        }
+
+        function hidePhoneNav() {
+            document.getElementById('mobile-nav').style.height = minHeight + "px"
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <nav id="page-nav">
+
+        <div id="nav-icon" onclick="togglePhoneNav()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <ul>
+            <li><a href="#section1" onclick="hidePhoneNav()">Julian Braun</a></li>
+            <li><a href="#section2" onclick="hidePhoneNav()">Skills</a></li>
+            <li><a href="#section3" onclick="hidePhoneNav()">Interests</a></li>
+            <li><a href="#contact" onclick="hidePhoneNav()">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section id="section1">
+
+            <div class="img-container">
+            </div>
+        
+        <div class="layer-2">
+            <div class="small-box">
+                <p class="born">Born & Raised</p>
+                <p class="raised">I was born in Germany but raised in South Africa.I have spent 20 years of my life in S.A and now for the past four years I've been living in Germany.</p>
+            </div>
+
+            <div class="small-box">
+                <p class="education">Education</p>
+                <p class="school">My education only goes as far as highschool. After finishing high school in S.A I moved back to Germany.</p>
+
+            </div>
+
+            <div class="small-box">
+                <p class="why">Why Web Development</p>
+                <p class="web">I was not happy with my previous job, and then my brother-in-law introduced me to coding and it instantly grabbed my attention.</p>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="section2">
+        <h1 align="center">Skills</h1>
+        <p class="basics">In the two weeks of the orientation course I've learned the basics of HTML5 and CSS. We also touched a bit on JavaScript, but only the very basic.</p>
+
+        <a href="https://en.wikipedia.org/wiki/HTML5
+        " target="_blank"><img src="img/html-5.png" class="html-img"></a>
+        <a href="https://en.wikipedia.org/wiki/Cascading_Style_Sheets
+        " target="_blank"><img src="img/css.png" class="css-img"></a>
+        <a href="https://en.wikipedia.org/wiki/JavaScript
+        " target="_blank"><img src="img/js.png" class="js-img"></a>
+       
+    </section>
+
+    <section id="section3">
+        <h2 align="center">Interests</h2>
+            <p class="love">There are a few things in life I really enjoy, and then there are things I love.</p>
+
+<!--        <div class="small-icon">-->
+            <img src="img/fam.png" class="small-home">
+            <img src="img/game.png" class="small-game">
+            <img src="img/plane1.png" class="small-plane">
+<!--        </div>-->
+        <div class="int-icon">
+<!--            <img src="img/fam.png" class="small-icon">-->
+            <p>I love spending time with my family. I grew up in a very large family so I can safely say there was almost never a boring moment. Family is always there for you no matter what you going through.</p>
+        </div> 
+        <div class="int-icon">
+<!--            <img src="img/gaming.png" class="small-icon">-->
+            <p>I love spending my free time playing console or pc games. What makes gaming even better is that I can always play with  my family, we are a family of gamers.</p>
+        </div>
+        <div class="int-icon">
+<!--            <img src="img/plane.png" class="small-icon">-->
+            <p>Traveling is something I really love but dont get to do as often as I would like. Initially I came to Germany for traviling purposes but ended up staying.</p>
+        </div>
+        
+    </section>
+
+    <footer>
+        <nav id="contact">
+            <ul>
+                <li><a href="https://www.google.com/gmail/
+                " target="_blank"><i class="fas fa-envelope-square"></i>Gmail</a></li>
+                <li><a href="https://www.linkedin.com/" target="_blank"><i class="fab fa-linkedin"></i>LinkedIn</a></li>
+                <li><a href="https://www.facebook.com/" target="_blank"><i class="fab fa-facebook-square"></i>Facebook</a></li>
+            </ul>
+
+            <p class="legal"><a href="datenschutz.html.html" target="_blank">Legal Page</a></p>
+        </nav>
+    </footer>
+
+</body></html>

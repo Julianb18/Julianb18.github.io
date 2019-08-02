@@ -1,3 +1,4 @@
+/*reset*/
 * {
     box-sizing: border-box;
     padding: 0;
@@ -5,70 +6,256 @@
     scroll-behavior: smooth;
 }
 
+/* Background & color*/
 
-/*Layout desktop*/
-
-
+body {
+    background-color: rgb(200, 200, 230);
+    font-family: 'Roboto', sans-serif;
+            
+}
 section {
     height: 100vh;
-    
-    background-size: cover;
-    
 }
 
 #section1 {
-    background-image: url(../img/table-mountain.png);
-    width:
-    
+    position: relative;
+    background: rgba(61, 71, 91,1);
+    margin-top: 0;
+
 }
 
-#section2 {
-    background-image: url(../img/table-mountain.png);
+.layer-2 {
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    width: 100%;
+}
 
+.img-container {
+    background-image: url(../img/table-mountain.png);
+    height: 35vw;
+    background-size: cover;
+}
+
+
+#section2 {
+
+    background: rgb(200, 200, 230);
 }
 
 #section3 {
-    background-image: url(../img/table-mountain.png);
+
+    background: rgb(200, 200, 230);
+}
+
+/*Three boxes*/
+.small-box {
+    background: rgb(180, 190, 200, 0.88);
+    width: 17vw;
+    height: 20vw;
+    margin: 20vw 3vw 0 3vw;
+}
+.born {
+    font-size: 1.9vw;
+    padding-top: 2vh;
+    padding-left: 2.7vw;
+}
+.raised {
+    padding: 19% 4%;
+    
+    
+    
+}
+.education {
+    font-size: 1.9vw;
+    padding-top: 2vh;
+    padding-left: 4.5vw;
+    
+}
+.school {
+    padding: 19% 4%;
+}
+.why {
+    font-size: 1.9vw;
+    padding-top: 2vh;
+    padding-left: 3.5vw;
+}
+.web {
+    padding: 7% 4%;
+}
+
+/*Font*/
+h1 {
+    font-size: 3.5em;
+    padding-top: 2vh;
 
 }
+
+h2 {
+    font-size: 3.5em;
+    padding-top: 2vh;
+}
+.basics {
+    font-size: 2em;
+    padding: 1vh 4vw;
+    
+}
+.love {
+    font-size: 2em;
+    padding: 1vh 4vw;
+}
+/*page 2 images*/
+.html-img {
+    height: 20vw;
+    margin: 5%;
+}
+.css-img {
+    height: 20vw;
+    margin: 5%;
+}
+.js-img {
+    height:18vw;
+    margin: 5%;
+}
+/*Page 3 images*/
+
+.int-icon {
+    width: 25vw;
+    height: 10vh;
+    margin: 5vw 0vw 0 5vw;
+    display:inline-flex;
+    font-size: 1em; 
+}
+.small-home {
+    height: 15vw;
+    margin-left: 8vw;
+    padding-left: 5px;
+    margin-top: 10vh   
+}
+.small-game {
+    height: 15vw;
+    margin-left: 16vw;
+    padding-left: 5px;
+    margin-top: 10vh 
+}
+.small-plane {
+    height: 15vw;
+    margin-left: 12vw;
+    padding-left: 10px;
+    margin-top: 10vh 
+}
+
+/*Navigation*/
+#nav-icon {
+    margin: 0 15px;
+    padding: 0 0 3px 0;
+}
+
+#nav-icon div {
+    width: 30px;
+    height: 5px;
+    border-radius: 2px;
+    background-color: rgba(233, 178, 85, 1);
+    margin: 3px 0 0 0;
+}
+
+
+#nav-icon:hover div {
+    background-color: rgb(0, 0, 0, 0.4);
+}
+
+#page-nav ul {
+    margin-top: 7px;
+}
+#page-nav ul li a {
+    display: inline-block;
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 1em;
+}
+#page-nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 40px;
+    padding-top: 5px;
+    overflow-y: hidden;
+    background-color: rgba(180, 190, 200, 0.4);
+    z-index: 1;
+}
+
+/*mobile screen*/
+@media only screen and (max-width: 600px) {
+    .layer-2 {
+        display:flow-root;   
+    }
+    .small-box {
+        width: 65vw;
+        height: 130px;
+        margin: 58px auto 0 auto;
+        font-size: 0.9em;  
+    }
+    .born {
+        font-size: 1.2em;
+    }
+    .raised {
+        padding: 0px 5px 0px 5px;
+        
+    }
+    .education {
+        font-size: 1.2em;
+    }
+    .school {
+        padding: 5px;
+    }
+    .why {
+        font-size: 1.2em;
+    }
+    .web {
+        padding: 5px
+    }
+    
+}
+/*Links*/
+a {
+    text-decoration: none;
+}
+a:link {
+    color: rgb(10,20,25);
+}
+a:visited {
+    color: rgb(10,20,25);
+}
+
+a:hover {
+    color: rgba(233, 178, 85, 1);
+}
+
 /*
 footer
 */
 
 footer {
     padding: 10vh 5vw;
-    background-color: cadetblue;
+    background-color: rgba(61, 71, 91,1);
     color: white;
 }
 
-.contact ul {
+#contact ul {
     list-style: none;
     display: flex;
-    font-size: 2em;
-    padding-left: 2em
+    font-size: 1.5em;
+    padding-left: 10px;
+        
 }
-
 i {
-    padding-right: 5px;
-    padding-left: 5px;
-}
-
-a {
-    text-decoration: none;
-}
-
-/*
-info boxes
-*/
-
-.rect {
-    display: inline-block;
-    height: 80px;
-    background: white;
+    padding-right: 6px;
     padding-left: 20px;
-    padding-right: 20px;
-    line-height: 20px;
 }
 
-
-
+p.legal {
+    padding-left: 70vw;
+    padding-top: 5vh;
+    font-size: 1.3em;
+}
