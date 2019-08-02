@@ -165,16 +165,16 @@ h2 {
     background-color: rgb(0, 0, 0, 0.4);
 }
 
-#page-nav ul {
+#mobile-nav ul {
     margin-top: 7px;
 }
-#page-nav ul li a {
+#mobile-nav ul li a {
     display: inline-block;
     width: 100%;
     padding: 10px 20px;
     font-size: 1em;
 }
-#page-nav {
+#mobile-nav {
     position: fixed;
     width: 100%;
     top: 0;
